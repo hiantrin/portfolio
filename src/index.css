@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: black;
+}
+
+@layer base {
+	.word{
+		@apply text-gray-300 text-sm
+	}
+	.number{
+		@apply text-green-300 text-sm
+	}
+	.titles{
+		@apply flex space-x-2 items-center justify-center cursor-pointer
+	}
+	button {
+		@apply px-4 py-2 border-2 border-green-300 text-green-300 rounded-lg flex justify-center items-center text-sm hover:bg-green-300 hover:text-black
+	}
+}
+
+.triangle{
+	width: 0px;
+	height: 0px;
+	position: relative;
+	border-bottom: 10px solid #86efac;
+	border-right: 20px solid transparent;
+	border-left: 20px solid transparent;
+}
+
+.triangle:before{
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-bottom: 8px solid black;
+	top: 2px;
+	left: -16px
+}
+
+.triangle2{
+	width: 0px;
+	height: 0px;
+	position: relative;
+	border-top: 10px solid #86efac;
+	border-right: 20px solid transparent;
+	border-left: 20px solid transparent;
+}
+.triangle2:before{
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-top: 8px solid black;
+	top: -10px;
+	left: -16px
+}
+
+.border-logo{
+	border-left: 2px solid #86efac;
+	border-right: 2px solid #86efac
+}
+
+.text-rotate{
+	transform: rotate(90deg);
+	letter-spacing: 2px;
+}
+
+::-webkit-scrollbar-button {
+	height: 12px;
+  }
+
+::-webkit-scrollbar {
+	width: 4px;
+}
+
+
+::-webkit-scrollbar-thumb {
+	background: #d1d5db;
+	border-radius:10px;
+  } 
+
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 10px;
+}
+
+::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 10px; 
+}  
