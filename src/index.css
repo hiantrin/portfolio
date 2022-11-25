@@ -211,6 +211,23 @@ body{
 	opacity: 0;
 }
 
+.reveal{
+	opacity: 0;
+	animation: release-it 800ms ease-in forwards;
+}
+
+@keyframes release-it {
+	0% {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+
 ::-webkit-scrollbar-button {
 	width: 12px;
   }

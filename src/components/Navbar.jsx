@@ -2,6 +2,12 @@ import React from 'react'
 import Logo from './Logo'
 
 const Navbar = () => {
+    const handleClickScroll = (elementId) => {
+        const element = document.getElementById(elementId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
     
     const title = [
         {number: "01", word: "About", link:"", style: "first-title"},
@@ -13,7 +19,7 @@ const Navbar = () => {
         <div className='flex space-x-6 '>
             {title.map((item, id) => {
                 return (
-                    <div key={id} className={`titles ${item.style} title-navbar` }>
+                    <div key={id} className={`titles ${item.style} title-navbar` } onClick={() => handleClickScroll(item.word)}>
                         <h1 className='number '>{item.number}.</h1>
                         <h1 className='word'>{item.word}</h1>
                     </div>
