@@ -32,7 +32,7 @@ const AbouMe = () => {
 			{skills.map((item, id) => {
 				return(
 					<div key={id} className='flex items-center  space-x-2'>
-						<FontAwesomeIcon icon={faCaretRight} className="text-green-300"/>
+						<FontAwesomeIcon icon={faCaretRight} className="text-sky-500"/>
 						<h1 className='text-sm text-gray-500'>{item}</h1>
 					</div>
 			)
@@ -42,7 +42,7 @@ const AbouMe = () => {
   return (
     <div id="About" ref={myRef}  className={!myElement ? "opacity-0 " : 'flex flex-col w-full my-20  px-10 sm:pl-[8%]  xl:pl-[15%] 2xl:pl-[20%] space-y-6 reveal '}>
         <div className='flex  items-center mb-10 space-x-7'>
-            <h1 className='text-2xl text-green-300 text-mono font-mono '>01. <span className='text-gray-300 text-3xl  font-bold'>About Me</span></h1>
+            <h1 className='text-2xl text-sky-500 text-mono font-mono '>01. <span className='text-gray-300 text-3xl  font-bold'>About Me</span></h1>
             <div className='w-[250px] h-[1px] bg-gray-500 rounded-xl '></div>
         </div>
         <div className='flex  w-auto'>
@@ -56,8 +56,8 @@ const AbouMe = () => {
 			</div>
 			<div className='relative w-80 h-80 image-hover'>
 				<img alt="Avatar" src={Avatar} className="absolute w-full h-full rounded-lg z-10"/>
-				<div className='w-full h-full absolute border-2 border-green-300 rounded-lg top-6 left-6 my-div' />
-				<div className='absolute w-full h-full bg-green-300 z-20 rounded-lg opacity-50 my-div2' />
+				<div className='w-full h-full absolute border-2 border-sky-500 rounded-lg top-6 left-6 my-div' />
+				<div className='absolute w-full h-full bg-sky-500 z-20 rounded-lg opacity-50 my-div2' />
 			</div>
 			
         </div>

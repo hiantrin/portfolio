@@ -1,7 +1,23 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from './Logo'
+import { useScrollDirection } from 'react-use-scroll-direction'
+
 
 const Navbar = () => {
+    const scrollDirection = useScrollDirection();
+    const [show, setShow] = useState("flex")
+    
+    useEffect(() => {
+        const hideNavbar = () => {
+            if (scrollDirection.isScrollingDown === true && window.scrollY >= 40)
+                setShow("hidden")
+            else if (scrollDirection.isScrollingUp === true)
+                setShow("flex")
+        }
+        hideNavbar();
+    }, [scrollDirection])
+
+
     const handleClickScroll = (elementId) => {
         const element = document.getElementById(elementId);
         if (element) {
@@ -26,8 +42,9 @@ const Navbar = () => {
                 )
             })}
         </div>
+
   return (
-    <div className='w-full bg-black fixed flex justify-between items-center pt-7 pb-2 z-10 px-10'>
+    <div className={`w-full bg-black fixed ${show} justify-between items-center pt-7 pb-2 z-10 px-10`}>
         <Logo />
         <div className='flex space-x-6'>
             {mapTitle}

@@ -31,7 +31,7 @@ const Presentation = () => {
   return (
 	<div  className={`${myTail ? "h-screen pt-60 mt-36" : "pt-60 pb-40"}`}>
 		<div ref={myRef} className={`flex flex-col   w-full  px-10 sm:pl-[8%]  xl:pl-[15%] 2xl:pl-[20%] space-y-6`}>
-        <h1 className='text-green-300 text-md whitespace-pre anime'>Hi,    my   name   is</h1>
+        <h1 className='text-sky-500 text-md whitespace-pre anime'>Hi,    my   name   is</h1>
         <h1 className='text-6xl text-gray-200 font-bold anime1'>Hamza Iantrin.</h1>
         <h1 className='text-6xl text-gray-500 font-bold anime2'>I build things for the web.</h1>
         <div className='w-[500px]'>
