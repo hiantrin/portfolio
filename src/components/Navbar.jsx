@@ -1,26 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import Logo from './Logo'
-import { useScrollDirection } from 'react-use-scroll-direction'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 
-const Navbar = () => {
-    const scrollDirection = useScrollDirection();
-    const [slide, setSlide] = useState(false)
-    const [show, setShow] = useState("flex")
-    
-    useEffect(() => {
-        const hideNavbar = () => {
-            if (scrollDirection.isScrollingDown === true && window.scrollY >= 40)
-                setShow("hidden")
-            else if (scrollDirection.isScrollingUp === true)
-                setShow("flex")
-        }
-        hideNavbar();
-    }, [scrollDirection])
 
+const Navbar = () => {
+    const [slide, setSlide] = useState(null)
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 768 )
+                setSlide(null);
+        }
+        window.addEventListener('resize', handleResize);
+        return () => {
+              window.removeEventListener('resize', handleResize);
+            }
+      }, [])
 
     const handleClickScroll = (elementId) => {
         const element = document.getElementById(elementId);
@@ -35,6 +33,7 @@ const Navbar = () => {
         {number: "03", word: "Work", link:"", style: "first-title2"},
         {number: "04", word: "Contact", link:"", style: "first-title3"},
     ]
+
     const mapTitle = 
         <div className='flex space-x-6 '>
             {title.map((item, id) => {
@@ -60,14 +59,14 @@ const Navbar = () => {
             <a href='/resume.pdf' target='_blank'><button className="text-lg px-10 mt-10">Resume</button></a> 
         </div>
   return (
-    <div className={`w-full bg-black fixed ${show} justify-between items-center pt-7 pb-2 z-10 px-10 relative `}>
+    <div className='flex w-full bg-black fixed  justify-between items-center pt-7 pb-2 z-10 px-10'>
         <Logo />
-        <FontAwesomeIcon icon={!slide ? faBarsStaggered : faXmark}  className={!slide ? "text-sky-500 flex md:hidden text-2xl cursor-pointer first-title z-10" : "text-sky-500 text-4xl z-10 cursor-pointer"} onClick={() => setSlide(!slide)}/>
+        <FontAwesomeIcon icon={!slide ? faBarsStaggered : faXmark}  className={!slide ? "text-sky-500 flex md:hidden text-2xl cursor-pointer first-title z-10" : "text-sky-500 flex md:hidden text-4xl z-10 cursor-pointer"} onClick={() => setSlide(slide === null ? true : !slide)}/>
         <div className='md:flex space-x-6 hidden '>
             {mapTitle}
            <a href='/resume.pdf' target='_blank'><button className='first-title4'>Resume</button></a> 
         </div>
-        <div className={slide ? "absolute w-[70%] h-screen  bg-black right-0 top-0 flex flex-col md:hidden slide" : "slide-right absolute w-[70%] h-screen z-10 bg-black right-0 top-0 flex flex-col md:hidden"}>
+        <div className={slide === true ? "absolute w-[70%] h-screen  bg-black right-0 top-0 flex flex-col md:hidden slide" : slide === false ? 'slide-right-anime  absolute w-[70%] h-screen z-10 bg-black right-0 top-0 flex flex-col md:hidden' : "hidden"}>
             {mapPhone}
         </div>
     </div>

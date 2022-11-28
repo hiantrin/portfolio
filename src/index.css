@@ -19,10 +19,55 @@ body{
 	button {
 		@apply px-4 py-2 border-2 border-sky-500 text-sky-500 rounded-lg flex justify-center items-center text-sm hover:bg-sky-500 hover:text-black
 	}
+	.my-input{
+		@apply w-full placeholder:text-white placeholder:text-sm outline-none text-sm bg-transparent text-white
+	}
 }
 
 .title-navbar:hover > h1.word{
 	color: #0ea5e9;
+}
+
+
+.triangle-big{
+	width: 0px;
+	height: 0px;
+	position: relative;
+	border-bottom: 20px solid #0ea5e9;
+	border-right: 40px solid transparent;
+	border-left: 40px solid transparent;
+}
+
+.triangle-big:before{
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left:38px solid transparent;
+	border-right: 38px solid transparent;
+	border-bottom: 19px solid black;
+	top: 3px;
+	left: -38px
+}
+
+.triangle2-big{
+	width: 0px;
+	height: 0px;
+	position: relative;
+	border-top: 20px solid #0ea5e9;
+	border-right: 40px solid transparent;
+	border-left: 40px solid transparent;
+}
+.triangle2-big:before{
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 38px solid transparent;
+	border-right: 38px solid transparent;
+	border-top: 19px solid black;
+	top: -22px;
+	left: -38px
 }
 
 .triangle{
@@ -69,6 +114,11 @@ body{
 .border-logo{
 	border-left: 2px solid #0ea5e9;
 	border-right: 2px solid #0ea5e9
+}
+
+.border-logo-big{
+	border-left: 3px solid #0ea5e9;
+	border-right: 3px solid #0ea5e9
 }
 
 .text-rotate{
@@ -241,15 +291,65 @@ body{
 }
 
 .slide-right{
-	animation: release-it 800ms ease-in forwards;
+	transform: translateX(100%);
 }
 
-@keyframes release-it {
+.slide-right-anime{
+	animation: slide-left 800ms ease-in forwards;
+}
+
+@keyframes slide-left {
 	0% {
 		transform: translateX(0);
 	}
 	100% {
 		transform: translateX(100%);
+	}
+}
+
+.image-back {
+	background-image: url("./images/matcha.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed ;
+}
+
+.image-back2 {
+	background-image: url("./images/hypertube.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed ;
+}
+
+.image-none{
+	background-image: none;
+}
+
+.animate-message{
+	animation: slide-down 800ms ease-in forwards;
+}
+
+@keyframes slide-down {
+	0% {
+		transform: translateY(-137%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.animate-message2{
+	animation: slide-up 800ms ease-in forwards;
+}
+
+@keyframes slide-up {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-137%);
 	}
 }
 
