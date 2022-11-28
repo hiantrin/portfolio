@@ -31,11 +31,11 @@ function App() {
 
 	return (
     	<div className="flex flex-col  overflow-x-hidden ">
-			<div className="fixed bottom-0 left-5 text-gray-300 lg:flex flex-col justify-center items-center  hidden show-footer z-10">
+			<div className="fixed bottom-0 left-5 text-gray-300 md:flex flex-col justify-center items-center  hidden show-footer z-10">
 				{mapImages}
 				<div className="border-l border-gray-300 h-32 mt-10" />
 			</div>
-			<div className="fixed bottom-0 right-6 text-gray-300 lg:flex flex-col justify-center items-center w-5 hidden show-footer z-10">
+			<div className="fixed bottom-0 right-6 text-gray-300 md:flex flex-col justify-center items-center w-5 hidden show-footer z-10">
 				<h1 className="text-gray-300 text-sm text-rotate mb-24 font-mono cursor-pointer hover:text-sky-500 ">hamzaiantrin1999@gmail.com</h1>
 				<div className="border-l border-gray-300 h-32 mt-10" />
 			</div>

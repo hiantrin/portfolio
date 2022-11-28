@@ -213,10 +213,10 @@ body{
 
 .reveal{
 	opacity: 0;
-	animation: release-it 800ms ease-in forwards;
+	animation: slide-it 800ms ease-in forwards;
 }
 
-@keyframes release-it {
+@keyframes slide-it {
 	0% {
 		transform: translateY(100px);
 		opacity: 0;
@@ -227,6 +227,31 @@ body{
 	}
 }
 
+.slide{
+	animation: slide-right 800ms ease-in forwards;
+}
+
+@keyframes slide-right {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.slide-right{
+	animation: release-it 800ms ease-in forwards;
+}
+
+@keyframes release-it {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
 
 ::-webkit-scrollbar-button {
 	width: 12px;
