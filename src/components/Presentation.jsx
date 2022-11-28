@@ -37,7 +37,7 @@ const Presentation = () => {
         <div className='w-[500px]'>
             <h1 className='text-gray-300 text-xl anime3'>I'm a full stack web developer specializing in building Web Application. With an emphasis on responsive web design. </h1>
         </div>
-        <button className='w-56 anime4'>Check out my Resume</button>
+        <a href='/resume.pdf' target='_blank'><button className='w-56 anime4'>Check out my Resume</button></a>
     </div>
 
 	</div>

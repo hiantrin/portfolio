@@ -48,10 +48,10 @@ const Navbar = () => {
         <Logo />
         <div className='flex space-x-6'>
             {mapTitle}
-            <button className='first-title4'>Resume</button>
+           <a href='/resume.pdf' target='_blank'><button className='first-title4'>Resume</button></a> 
         </div>
     </div>
   )
-}
+} 
 
 export default Navbar
