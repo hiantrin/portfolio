@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <div className='flex flex-col space-y-10 justify-center items-center pb-10'>
        {mapImages}
-       <h1 className='text-gray-500 text-sm cursor-pointer transition ease-in-out  hover:-translate-y-1 hover:scale-110 duration-300 hover:text-green-300'>Built by Hamza Iantrin</h1>
+       <h1 className='text-gray-500 text-sm cursor-pointer transition ease-in-out  hover:-translate-y-1 hover:scale-110 duration-300 hover:text-sky-500'>Built by Hamza Iantrin</h1>
     </div>
 
   )

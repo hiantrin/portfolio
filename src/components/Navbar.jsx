@@ -50,13 +50,13 @@ const Navbar = () => {
         <div className="w-full h-full flex flex-col items-center justify-center space-y-10">
             {title.map((item, id) => {
                 return (
-                    <div key={id} className="flex flex-col w-full items-center space-y-2 cursor-pointer" onClick={() => handleClickScroll(item.word)}>
-                        <h1 className='text-sky-500 font-mono'>{item.number}.</h1>
-                        <h1 className='text-gray-300 font-mono text-xl'>{item.word}</h1>
+                    <div key={id} className="flex flex-col w-full items-center space-y-2 cursor-pointer" onClick={() =>{ handleClickScroll(item.word) ; setSlide(false)}}>
+                        <h1 className='text-sky-500 font-mono text-xs xs:text-sm sm:text-lg'>{item.number}.</h1>
+                        <h1 className='text-gray-300 font-mono text-sm xs:text-lg sm:text-xl'>{item.word}</h1>
                     </div>
                 )
             })}
-            <a href='/resume.pdf' target='_blank'><button className="text-lg px-10 mt-10">Resume</button></a> 
+            <a href='/resume.pdf' target='_blank'><button className="text-sm xs:text-md sm:text-lg  px-5 xs:px-10 mt-10">Resume</button></a> 
         </div>
   return (
     <div className='flex w-full bg-black fixed  justify-between items-center pt-7 pb-2 z-10 px-10'>
