@@ -24,7 +24,7 @@ const Work = () => {
     const work1 = 
         <div className="z-30 flex flex-col md:items-end items-center   px-5 pb-4 md:px-0 md:pb-0 ">
             <h1 className='text-xs sm:text-sm text-mono text-sky-500 mb-4 mt-10'>Featured Project</h1>
-            <h1 className='text-md  sm:text-xl md:text-2xl font-bold text-gray-300 font-mono mb-6 text-center'>Matchaa for dating</h1>
+            <h1 className='text-md  sm:text-xl md:text-2xl font-bold text-gray-300 font-mono mb-6 text-center'>Matcha for dating</h1>
             <div className='flex p-5 bg-gray-800 w-full md:w-[500px]  rounded-md mb-3 text-center md:text-right'>
                 <h1 className='text-gray-400 text-xs sm:text-sm md:text-lg'>This project is about creating a dating website.A user will then be able to register, connect, fill his/her profile, search and look intothe profile of other users, like them 1, chat with those that “liked” back.</h1>
             </div>

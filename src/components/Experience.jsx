@@ -32,8 +32,8 @@ const Experience = () => {
                     <h1 className='text-sm text-sky-500 font-mono'>DROPLEET</h1>
                 </div>
                 <div className='flex flex-col items-center md:items-start'>
-                    <h1 className='text-gray-300 whitespace-pre text-lg font-mono mt-[5px]'>Engineer <span className='text-sky-500 font-mono text-lg'>@ DROPLEET</span></h1>
-                    <h1 className='text-sm font-mon text-gray-400 mt-2'>May 2021 - Present</h1>
+                    <h1 className='text-gray-300 whitespace-pre text-lg font-mono mt-[5px]'>Full Stack web developer <span className='text-sky-500 font-mono text-lg'>@ DROPLEET</span></h1>
+                    <h1 className='text-sm font-mon text-gray-400 mt-2'>May 2021 - October 2021</h1>
                     <div className='flex space-x-3 mt-8  md:w-[480px]'>
                         <FontAwesomeIcon icon={faCaretRight} className="text-sky-500 mt-1"/>
                         <h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>Write modern, performant, maintainable code for a diverse array of client and internal projects.</h1>
