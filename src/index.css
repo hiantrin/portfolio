@@ -353,6 +353,55 @@ body{
 	}
 }
 
+/* customizing sweetalert */
+
+/*/////////////////////////////////////*/
+
+
+.swal-footer{
+	display: flex;
+	justify-content: center;
+}
+
+.swal-button {
+	background-color: #0ea5e9;
+	color: black;
+}
+
+
+.swal-modal{
+	background-color: black;
+	border-width: 2px;
+	border-color: #0ea5e9;
+}
+.swal-icon--success:after, .swal-icon--success:before {
+	background-color: black;
+}
+
+.swal-icon--success__hide-corners {
+	background-color: black;
+}
+
+.swal-icon--success__ring {
+	border: 4px solid #0ea5e9;
+}
+
+.swal-icon--success__line {
+	background-color: #0ea5e9;
+}
+
+.swal-title{
+	color: #6b7280;
+}
+
+.swal-text{
+	color: #d1d5db;
+}
+
+/*/////////////////////////////////////*/
+
+/* customizing sweetalert */
+
 ::-webkit-scrollbar-button {
 	width: 12px;
   }
