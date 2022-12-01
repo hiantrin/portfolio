@@ -278,7 +278,7 @@ body{
 }
 
 .slide{
-	animation: slide-right 800ms ease-in forwards;
+	animation: slide-right 400ms ease-in forwards;
 }
 
 @keyframes slide-right {
@@ -295,7 +295,7 @@ body{
 }
 
 .slide-right-anime{
-	animation: slide-left 800ms ease-in forwards;
+	animation: slide-left 400ms ease-in forwards;
 }
 
 @keyframes slide-left {
@@ -351,6 +351,12 @@ body{
 	100% {
 		transform: translateY(-137%);
 	}
+}
+
+.my-blur{
+	background: transparent;
+	backdrop-filter: blur(5px);
+
 }
 
 /* customizing sweetalert */

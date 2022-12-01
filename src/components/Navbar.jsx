@@ -59,19 +59,19 @@ const Navbar = () => {
             <a href='/resume.pdf' target='_blank'><button className="text-sm xs:text-md sm:text-lg  px-5 xs:px-10 mt-10">Resume</button></a> 
         </div>
   return (
-        <div className='flex w-full bg-black fixed  justify-between items-center pt-7 pb-2 z-10 px-10 '>
+        <div className='flex w-full bg-black fixed  justify-between items-center pt-7 pb-2 z-10 px-10'>
             <Logo />
             <FontAwesomeIcon icon={!slide ? faBarsStaggered : faXmark}  className={!slide ? "text-sky-500 flex md:hidden text-2xl cursor-pointer first-title z-10" : "text-sky-500 flex md:hidden text-4xl z-10 cursor-pointer"} onClick={() => setSlide(slide === null ? true : !slide)}/>
             <div className='md:flex space-x-6 hidden '>
                 {mapTitle}
             <a href='/resume.pdf' target='_blank'><button className='first-title4'>Resume</button></a> 
             </div>
-            <div className={slide === true ? "absolute w-[70%] h-screen z-10  bg-black right-0 top-20 flex flex-col md:hidden slide" : slide === false ? 'slide-right-anime  absolute w-[70%] h-screen z-10 bg-black right-0 top-20 flex flex-col md:hidden' : "hidden"}>
+            <div className={slide === true ? "absolute w-[70%] h-screen z-20  bg-black right-0 top-20 flex flex-col md:hidden slide " : slide === false ? 'slide-right-anime  absolute w-[70%] h-screen z-10 bg-black right-0 top-20 flex flex-col md:hidden' : "hidden"}>
                 {mapPhone}
             </div>
-            {/* <div className={slide === true ? "absolute w-[30%] h-screen z-10  bg-transparent blur-sm left-0 top-20 flex md:hidden " : slide === false ? 'absolute w-[30%] h-screen z-10 kk left-0 top-20 flex  md:hidden bg-transparent blur-sm' : "hidden"}>
+            <div className={slide === true ? "absolute w-[100%] h-screen z-10   left-0 top-20 flex md:hidden my-blur" : "hidden"}>
 
-            </div> */}
+            </div>
         </div>
   )
 } 
