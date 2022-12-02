@@ -93,8 +93,8 @@ const Contact = () => {
 
   return (
 	<>
-	<div id="Contact" ref={myRef} className={!myElement ? "opacity-0 " : 'flex w-full flex-col items-center  reveal pb-10 mb-28'}>
-		<div className="flex w-full flex-col items-center bg-black z-30 py-10 ">
+	<div id="Contact" ref={myRef} className={!myElement ? "opacity-0 " : 'flex w-full flex-col items-center  reveal pb-10 mb-16'}>
+		<div className="flex w-full flex-col items-center bg-black z-30 pt-28 ">
 			<h1 className='text-xs sm:text-lg text-sky-500 text-mono font-mono mb-6'>04. <span className='text-gray-300 text-sm  sm:text-xl  font-bold'>What's next</span></h1>
 			<h1 className='text-3xl sm:text-5xl text-gray-300  font-bold mb-8'>Get In Touch</h1>
 			<div className='flex text-center w-full px-6 sm:px-0 sm:w-[600px]'>
