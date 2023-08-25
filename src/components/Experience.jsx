@@ -52,6 +52,32 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
+            <div className='flex  flex-col md:flex-row space-x-6 items-center md:items-start pt-20'>
+                <div className='flex items-center  space-x-3 pr-3 bg-gray-800 h-10 max-w-max '>
+                    <div className='h-10 w-[2px] rounded-lg bg-sky-500'/>
+                    <h1 className='text-sm text-sky-500 font-mono'>AGENZ</h1>
+                </div>
+                <div className='flex flex-col items-center md:items-start'>
+                    <h1 className='text-gray-300 whitespace-pre text-lg font-mono mt-[5px]'>Full Stack web developer <span className='text-sky-500 font-mono text-lg'>@ AGENZ</span></h1>
+                    <h1 className='text-sm font-mon text-gray-400 mt-2'>junuary 2023 - April 2023</h1>
+                    <div className='flex space-x-3 mt-8  md:w-[480px]'>
+                        <FontAwesomeIcon icon={faCaretRight} className="text-sky-500 mt-1"/>
+                        <h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>Upgrade AGENZ web application of online services whose mission is to bring transparency to the real estate market in Morocco.</h1>
+                    </div>
+                    <div className='flex space-x-3 mt-8  md:w-[480px]'>
+                        <FontAwesomeIcon icon={faCaretRight} className="text-sky-500 mt-1"/>
+                        <h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Redux, Node js,  mongoDB, and Next js.</h1>
+                    </div>
+                    <div className='flex space-x-3 mt-8  md:w-[480px]'>
+                        <FontAwesomeIcon icon={faCaretRight} className="text-sky-500 mt-1"/>
+                        <h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>Communicate with multi-disciplinary teams of engineers, designers, on a daily basis.</h1>
+                    </div>
+                    <div className='flex space-x-3 mt-8  md:w-[480px]'>
+                        <FontAwesomeIcon icon={faCaretRight} className="text-sky-500 mt-1"/>
+                        <h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>I was responsable in my enternship for upgrade and create multiple new features on the application.</h1>
+                    </div>
+                </div>
+            </div>
         </div>
         
   )
