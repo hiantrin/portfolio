@@ -3,11 +3,14 @@ import Logo from './Logo'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { useNavigate} from 'react-router-dom';
+
 
 
 
 const Navbar = () => {
     const [slide, setSlide] = useState(null)
+    const navigate = useNavigate()
 
     useEffect(() => {
         const handleResize = () => {
@@ -21,10 +24,17 @@ const Navbar = () => {
       }, [])
 
     const handleClickScroll = (elementId) => {
-        const element = document.getElementById(elementId);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+        if (elementId === "Terms")
+        {
+            navigate("/terms")
+
+        } else {
+            const element = document.getElementById(elementId);
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
         }
+       
       };
     
     const title = [
@@ -32,6 +42,7 @@ const Navbar = () => {
         {number: "02", word: "Experience", link:"", style: "first-title1"},
         {number: "03", word: "Work", link:"", style: "first-title2"},
         {number: "04", word: "Contact", link:"", style: "first-title3"},
+        {number: "05", word: "Terms", link:"", style: "first-title3"},
     ]
 
     const mapTitle = 
