@@ -19,12 +19,20 @@ const AbouMe = () => {
 		}
 	}, [myRef])
 	const skills = [
+		"HTML",
 		"JavaScript (ES6+)",
+		"Typescript",
+		"C",
+		"CSS",
 		"Tailwindcss",
-		"React",
+		"React js",
+		"React native",
+		"Next js",
 		"Node.js",
 		"Express",
-		"Mysql"
+		"MySQL",
+		"MongoDB",
+		"Git"
 	]
 
 	const mapSkills = 
@@ -50,10 +58,9 @@ const AbouMe = () => {
         <div className='flex  w-auto flex-col md:flex-row space-y-28 md:space-y-0'>
 			<div className='flex flex-col w-full  md:w-[50%] lg:w-[480px] mr-20 lg:mr-10 space-y-5'>
 				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>Hello! My name is Hamza and I enjoy creating things that live on the internet.</h1>
-				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>My interest in web development started back in 2019 When I decided to join 1337 Coding School, turns out that I am so good at programming. </h1>
-				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>Now, after 3 years of studying at 1337 I became a Well-qualified Full stack Web Developer.</h1>
-				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>I have created multiple web application that you will see some of them in my portfolio.</h1>
-				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>Also I have 6 months (internship) at DROPLEET between May 2021 - October 2021</h1>
+				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>My interest in web development started back in 2019 When I decided to join 1337 Coding School. It turns out that I am quite good at programming. </h1>
+				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>Over the past 3 years, I have gained diverse experience through 7 different roles in various organizations.</h1>
+				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>I have created multiple web applications, some of which you will see in my portfolio.</h1>
 				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>Here are some technologies that I am working with currently:</h1>
 				{mapSkills}
 			</div>
