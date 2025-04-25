@@ -6,37 +6,13 @@ import ExperienceBar from './experienceBar';
 import ExperienceNode from './experienceNode';
 
 const allExperiences = [
-    "DropLeet",
-    "1337Labs",
     "Agenz",
-    "Noun",
-    "NEO DMCC",
+    "DropLeet",
+    "01 NEO",
     "WiPoker"
 ]
 
 const allExperiencesInfos = [
-    {
-        title: "DropLeet",
-        fullTitle: "Full Stack web developer",
-        from: "May 2021",
-        to: "October 2021",
-        tasks : [
-            "Write modern, performant, maintainable code for a diverse array of client and internal projects.",
-            "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Node js, React, and Next js.",
-            "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis.",
-            "I was responsable in my enternship for creating a web application that allows users to rent cars and see prices in all the country and get in touch with rental agences."
-        ]
-    },
-    {
-        title: "1337Labs",
-        fullTitle: "Full Stack web developer",
-        from: "July 2022",
-        to: "December 2022",
-        tasks : [
-            "Successfully navigated diverse freelance projects for various clients, collaborating with different teams to deliver tailored solutions and meet project objectives.",
-            "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Node js, React, and Next js.",
-        ]
-    },
     {
         title: "Agenz",
         fullTitle: "Full Stack web developer",
@@ -50,18 +26,19 @@ const allExperiencesInfos = [
         ]
     },
     {
-        title: "Noun",
-        fullTitle: "Full Stack web developer",
+        title: "DropLeet",
+        fullTitle: "React native developer",
         from: "May 2023",
         to: "October 2023",
         tasks : [
-           "Create a user-friendly web application for managing apartment and villa rentals.",
-           "Simplify booking processes and provide real-time property availability monitoring.",
-           "Prioritize user experience with intuitive interfaces catering to both property owners and tenants, ensuring a smooth and efficient interaction throughout."
+            "Write modern, performant, maintainable code for a diverse array of client and internal projects.",
+            "Work with a variety of different languages, platforms, frameworks, and content management systems such as JavaScript, TypeScript, Node js, React native",
+            "Communicate with multi-disciplinary teams of engineers, designers, producers, and clients on a daily basis.",
+            "I was responsable in my work for creating a mobile application that allows users to rent cars and see prices in all the country and get in touch with rental agences."
         ]
     },
     {
-        title: "NEO DMCC",
+        title: "01 NEO",
         fullTitle: "React Native Developer",
         from: "November 2023",
         to: "Feb 2024",
@@ -77,7 +54,7 @@ const allExperiencesInfos = [
         title: "WiPoker",
         fullTitle: "React Native Developer",
         from: "Mars 2024",
-        to: "May 2024",
+        to: "junuary 2025",
         tasks : [
             "Developed Wipoker, a multiplayer mobile poker game featuring real-time gameplay, intuitive controls, and stunning graphics. Implemented various poker styles, enabling players to compete globally or with friends.",
             "Focused on delivering an authentic and engaging user experience through meticulous design and development.",

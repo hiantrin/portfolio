@@ -59,8 +59,8 @@ const AbouMe = () => {
 			<div className='flex flex-col w-full  md:w-[50%] lg:w-[480px] mr-20 lg:mr-10 space-y-5'>
 				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>Hello! My name is Hamza and I enjoy creating things that live on the internet.</h1>
 				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>My interest in web development started back in 2019 When I decided to join 1337 Coding School. It turns out that I am quite good at programming. </h1>
-				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>Over the past 3 years, I have gained diverse experience through 7 different roles in various organizations.</h1>
-				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>I have created multiple web applications, some of which you will see in my portfolio.</h1>
+				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>Over the past 2 years, I have gained diverse experience through 4 different roles in various organizations.</h1>
+				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>I have created multiple web and mobile applications, some of which you will see in my portfolio.</h1>
 				<h1 className='text-gray-500 text-xs xs:text-sm sm:text-lg'>Here are some technologies that I am working with currently:</h1>
 				{mapSkills}
 			</div>
